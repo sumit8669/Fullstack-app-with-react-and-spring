@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, withRouter } from 'react-router-dom';
 import EmployeeService from '../services/EmployeeService'
 
 export default class ListEmployee extends Component {
