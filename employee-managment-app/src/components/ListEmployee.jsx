@@ -17,6 +17,9 @@ export default class ListEmployee extends Component {
       <div>
         <h2 className='text-center'>ListEmployee</h2>
         <div className='row'>
+          <button className='btn btn-prime' onClick={this.addEmployee}>Add Employee</button>
+        </div>
+        <div className='row'>
             <table className='table table-striped table-bordered'>
                 <thead>
                     <tr>
