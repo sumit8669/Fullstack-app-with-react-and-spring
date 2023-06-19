@@ -6,20 +6,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
-      <div className="container">
-        <Header />
-        <div className="container">
-          <Routes>
-            <Route exact path="/" component={ListEmployee} />
-            <Route path="/employees" component={ListEmployee} />
-            <ListEmployee />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <Router>
+             <Header />
+              <div className="container">
+                   <Routes>
+                         <Route path = "/" element={<ListEmployee/>}></Route>
+                         <Route path = "/employee" element={<ListEmployee/>}></Route>
+                   </Routes>
+              </div>
+              <Footer/>
+     </Router>
+    </div>
   );
 }
-
 export default App;
