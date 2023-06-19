@@ -12,7 +12,7 @@ function App() {
              <Header />
               <div className="container">
                    <Routes>
-                         <Route path = "/" element={<ListEmployee/>}></Route>
+                         <Route path = "/" exact element={<ListEmployee/>}></Route>
                          <Route path = "/employee" element={<ListEmployee/>}></Route>
                          <Route path = "/add-employee" element={<CreateEmployee/>}></Route>
                    </Routes>
